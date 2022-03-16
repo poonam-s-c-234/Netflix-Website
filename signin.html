@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <style type="text/css">
+        body
+        {
+            background-image:url(bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+  			background-attachment: fixed;
+            font-family: Times New Roman;
+        }
+        h1
+        {
+            text-align: center;
+            font-size: 40px;
+            color : white;
+        }
+        label{
+            color:white;
+        }
+
+        .Login
+        {
+            text-align: center;
+            max-width: 450px;
+            border-radius: 20px;
+            margin: auto;
+            /*background:rgba(0,0,0,0.7);*/
+            background:rgb(0, 115, 230);
+            box-sizing: border-box;
+            padding: 50px;
+            color: white;
+            margin-top: 60px;
+
+
+        }
+        .form
+        {
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px 6px;
+            background-color: rgba(8, 8, 8, 0.89);
+            outline: none;
+            border: none;
+            border-bottom: 1px dotted #fff;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            opacity : 0.9;
+
+        }
+        .main{
+            width: 400px;
+            margin: 100px auto 0px auto
+        }
+        input[type=Submit]
+        {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 10px 0;
+            margin : 30px;
+            outline: none;
+            border: none;
+            background: rgb(247, 247, 250);
+            opacity: 0.7;
+            border-radius: 20px;
+            font-size: 20px;
+            color: rgb(24, 21, 21);
+
+        }
+        .footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 375px;
+  background-color: black;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:space-around;
+
+}
+
+.footercon {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 50px;
+  background-color: transparent;
+}
+
+.footer .flex1 {
+  color:#999;;
+  justify-content:space-around;
+  align-items:flex-start;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  width:100%;
+  font-size: 17px;
+  min-height: 30px;
+
+}
+
+.footer .flex1 h5 {
+  align-self:flex-start;
+}
+
+.list1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: flex-start;
+  align-self: center;
+  justify-content: center;
+  min-height:50px;
+  font-size: 13px;
+  padding: 0px 70px;
+  text-align: left;
+}
+
+.list1 li {
+  font-size: 13px;
+  margin: 7px -10px;
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: center;
+  align-self: flex-start;
+  justify-content: center;
+}
+
+.list1 li a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+li a {
+  font-size: 13px;
+  text-align: center;
+  color: #999;
+}
+
+
+.footertxt {
+  color:white;
+  display:flex;
+  flex-direction:row;
+  align-items:flex-end;
+  justify-content: flex-end;
+}
+
+.end {
+  width:100%;
+  min-height:50px;
+background-color: black;
+justify-content:space-around;
+align-items:flex-start;
+display: flex;
+flex-direction:row;
+flex-wrap:wrap;
+color:#999;
+margin-top:-60px;
+}
+
+.end h2 {
+  display:flex;
+  flex-direction: row;
+font-size:16px;
+}
+.logo img {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  align-self: left;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  align-self: left;
+}
+
+ 
+
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png">
+    </div>
+    <div class = "main">
+        <div class ="form">
+        <h1>Sign in</h1>
+        <form name="f1" action ="" method = "POST">
+            <p>
+                <label> Username: </label>
+                <input type = "email" id ="email" name  = "email" placeholder="Enter registered email"/>
+            </p>
+            <p>
+                <label> Password: </label>
+                <input type = "password" id ="ps" name  = "ps" placeholder="Enter password"/>
+            </p>
+            <p>
+                <input type =  "submit" id = "btn" value = "Login" />
+            </p>
+            New user? <a href="Signup.html">Sign up now </a>
+        </form>
+        </div>
+    </div>
+  
+    <br>
+    <br>
+    <br><br><br><br>
+<div class="footer">
+
+
+<div class="footercon">
+<div class="flex1">
+    <h5>Contact us</h5>
+</div>         
+          
+<ul class="list1">
+ 
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Investor Relation</a></li>
+        <li><a href="">Ways to Watch</a></li>
+
+        <li><a href="">Corporate Information</a></li>
+        <li><a href="">Netflix Originals</a></li>
+        </ul>
+        <ul class="list1">
+        <li><a href="">Home</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">#</a></li>
+            </ul>
+            <ul class="list1">
+                <li><a href="">Account</a></li>
+                <li><a href="">Redeem Gift Cards</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Speed Test</a></li>
+                <li><a href="">#</a></li>
+
+                </ul>
+                <ul class="list1">
+                    <li><a href="">Media Center</a></li>
+                    <li><a href="">Buy Gift Cards</a></li>
+                    <li><a href="">Cookie Preferences</a></li>
+                    <li><a href="">Legal Notices</a></li>
+                    <li><a href="">#</a></li>
+
+                    </ul>
+                 
+    </div>
+
+  </div>
+  <div class="end">
+<h2>
+Netflix US
+</h2> 
+ </div>
+    </body>
+    </html>
